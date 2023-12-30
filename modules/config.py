@@ -256,7 +256,7 @@ default_image_number = get_config_item_or_set_default(
 checkpoint_downloads = get_config_item_or_set_default(
     key='checkpoint_downloads',
     default_value={
-        "Realistic_Vision_V6.0_B1_noVAE": "https://huggingface.co/SG161222/Realistic_Vision_V6.0_B1_noVAE"
+        "Realistic_Vision_V6.0_B1_noVAE": "https://huggingface.co/SG161222/Realistic_Vision_V6.0_B1_noVAE/resolve/main/Realistic_Vision_V6.0_NV_B1.safetensors"
     },
     validator=lambda x: isinstance(x, dict) and all(isinstance(k, str) and isinstance(v, str) for k, v in x.items())
 )
